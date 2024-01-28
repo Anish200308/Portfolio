@@ -11,7 +11,7 @@ body {
 }
 .container{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #f3f5f8;
 
 }
@@ -19,7 +19,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80px;
+    height: 100vh;
     line-height: 80px;
     z-index: 111;
     
