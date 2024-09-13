@@ -1,184 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Portfolio</title>
-    
-</head>
-<body>
-    <section class="container" id="myhome">
-        <nav>
-            <div class="logo">
-                <img src="logo.jpg" alt="Logo">
-                Portfolio <b>.</b></div>
-            <ul class="navItem">
-                <li>
-                    <a href="#myhome">Home</a>
-                    <a href="#myabout">About</a>
-                    <a href="#myskill">Skill</a>
-                    <a href="#feed">Blog</a>
-                </li>
-            </ul>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/anish-karn-5009raw/"><i class="fa fa-linkedin"></i></a>
-                <a href="mailto:anish.karn2008@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/Anish200308"><i class="fa fa-github"></i></a>
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline">Hello,<br> I am Anish Kumar Karn</span>
-                <h1>And I'm a <br><span class="multiText"></span></h1>
-                <p>Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.</p>
-                <div class="btns">
-                    <button><a href="resume.pdf" download="Resume" >Download cv</a> <i class="fa fa-download"></i></button>
-                    <Button>Hire Me</Button>
-                </div>
-            </div>
-            <div class="cols cols1">
-                <div class="imgbox">
-                    <img src="img/img2.png" id="splash" alt="">
-                    <img src="img/mypic.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="about" id="myabout">
-        <div class="about-img">
-            <img src="Anish1.png" alt="">
-        </div>
-        <div class="about-content">
-            <h1 >About <span class="multiText">Me</span></h1>
-            <h3>Frontend Developer</h3>
-            <p>As a dedicated and ambitious Computer Science and Engineering student, I am constantly driven by my passion for technology and the desire to contribute to groundbreaking innovations.
-                An ardent believer in lifelong learning, I stay up-to-date with the latest advancements in the industry by actively engaging in research, attending workshops, and participating in online courses. This commitment to ongoing education enables me to stay ahead of the curve and adapt to the rapidly evolving landscape of technology.
-                </p>
-            <div class="btns rdm"><button > Read More</button></div>
-        </div>
-        
-        
-
-    </section>
-
-    <section class="skill" id="myskill">
-        <h1 class="title">My <span class="multiText">Skill</span> </h1>
-        <div class="row">
-            <div class="course-col">
-                <h3>WEB DEVELOPMENT  <span class="multiText"><i class="fa fa-code"></i></span></h3>
-                <div class="skill-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    
-                    <span>Wordpress (theme)</span>
-                    <span>WixStudio (theme)</span>
-                </div>
-            </div>
-            <div class="course-col">
-                <h3>UI Designer <span class="multiText"><i class="fa fa-pen-ruler"></i></span></h3></h3>
-                <div class="skill-list">
-                    <span>Photoshop</span>
-                    <span>Canva</span>
-                    <span>InDesign</span>
-                    
-                </div>
-            </div>
-            <div class="course-col">
-                <h3>Programming Languages<span class="multiText"><i class="fa fa-code"></i></span></h3></i></h3>
-                <div class="skill-list">
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>JAVA</span>
-                    <span>Python</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="Blog" id="feed">
-        <div class="blog-content">
-            <h1>BLOG</h1>
-            <p>Welcome to my corner of the internet! As a passionate web developer, I've embarked on a journey filled with lines of code, design challenges, and endless possibilities. In this blog post, I want to share some of my experiences, insights, and the lessons I've learned along the way.
-            <br>I invite you to join the conversation! Whether you're a fellow developer, a design enthusiast, or someone curious about the world of web development, let's connect. Share your thoughts, ask questions, or simply enjoy the exploration of this dynamic and ever-evolving field.</p>
-
-                
-            <div class="comment-box">
-                <h3>Leave a Feedback</h3>
-                <form class="comment-form" onsubmit="submitForm(event)">
-                    <input type="text" id="nameInput" placeholder="Enter Name">
-                    <input type="email" id="emailInput" placeholder="Enter Email">
-                    <textarea id="commentInput" cols="30" rows="10" placeholder="Your comment"></textarea>
-                    <button type="submit" class="hero red-btn">POST COMMENT</button>
-                </form>
-            </div>
-        
-            <script>
-                function submitForm(event) {
-                    event.preventDefault(); // Prevents the default form submission
-        
-                    // Get input values
-                    var name = document.getElementById('nameInput').value;
-                    var email = document.getElementById('emailInput').value;
-                    var comment = document.getElementById('commentInput').value;
-        
-                    // Display the input values in the console
-                    console.log("Name:", name);
-                    console.log("Email:", email);
-                    console.log("Comment:", comment);
-        
-                    // You can send this data to a server using AJAX or any other method
-                }
-            </script>
-        
-    </section>
-    <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
-
-    <script>
-        // JavaScript function to scroll to the top of the page
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Show/hide the back-to-top button based on the scroll position
-        window.onscroll = function() {
-            var scrollBtn = document.getElementById('backToTopBtn');
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollBtn.style.display = 'block';
-            } else {
-                scrollBtn.style.display = 'none';
-            }
-        };
-    </script>
-
-
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script>
-        var typingEffect =new Typed(".multiText",{
-            strings : ["Coder...","Developer...","CyberSecurity Enthusiast..."],
-            loop:true,
-            typeSpeed :100,
-            backSpeed :80,
-            backDelay :1500
-        })
-    </script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -192,211 +11,173 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
-
 </head>
 
 <body>
-    <section class="container" id="myhome">
-        <nav>
-            <div class="logo">
-                <img src="logo.jpg" alt="Logo">
-                Portfolio <b>.</b>
-            </div>
-            <ul class="navItem">
-                <li>
-                    <a href="#myhome">Home</a>
-                    <a href="#myabout">About</a>
-                    <a href="#myskill">Skill</a>
-                    <a href="#feed">Blog</a>
-                </li>
-            </ul>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/anish-karn-5009raw/"><i
-                        class="fa fa-linkedin"></i></a>
-                <a href="mailto:anish.karn2008@gmail.com"><i
-                        class="fa fa-envelope"></i></a>
-                <a href="https://github.com/Anish200308"><i
-                        class="fa fa-github"></i></a>
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline">Hello,<br> I am Anish Kumar Karn</span>
-                <h1>And I'm a <br><span class="multiText"></span></h1>
-                <p>Self-motivated and hardworking fresher seeking for an
-                    opportunity to work in a challenging environment to prove my
-                    skills and utilize my knowledge & intelligence in the growth
-                    of the organization.</p>
-                <div class="btns">
-                    <button><a href="resume.pdf" download="Resume">Download
-                            cv</a> <i class="fa fa-download"></i></button>
-                    <Button>Hire Me</Button>
+    <div class="main">
+
+        <section class="container" id="myhome">
+            <nav>
+                <div class="logo">
+                    <img src="logo.jpg" alt="Logo">
+                    Portfolio <b>.</b>
+                </div>
+                <ul class="navItem">
+                    <li>
+                        <a href="#myhome">Home</a>
+                        <a href="#myabout">About</a>
+                        <a href="#myskill">Skill</a>
+                        <a href="#feed">Blog</a>
+                    </li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/anish-karn-5009raw/"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a>
+                    <a href="mailto:anish.karn2008@gmail.com"><i class="fa fa-envelope"
+                            aria-hidden="true"></i></a>
+                    <a href="https://github.com/Anish200308"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                    <div class="dark-mode-toggle">
+                        <button id="darkModeToggleBtn" onclick="toggleDarkMode()">
+                            <i class="fa fa-adjust"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="wrapper">
+                <div class="cols cols0">
+                    <span class="topline">Hello,<br> I am Anish Kumar Karn</span>
+                    <h1>And I'm a <br><span class="multiText"></span></h1>
+                    <p>Self-motivated and hardworking fresher seeking for an
+                        opportunity to work in a challenging environment to prove my
+                        skills and utilize my knowledge & intelligence in the growth
+                        of the organization.</p>
+                    <div class="btns">
+                        <button><a href="resume.pdf" download="Resume">Download
+                                cv</a> <i class="fa fa-download"></i></button>
+                        <Button>Hire Me</Button>
+                    </div>
+                </div>
+                <div class="cols cols1">
+                    <div class="imgbox">
+                        <img src="img/img2.png" id="splash" alt="">
+                        <img src="img/mypic.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="cols cols1">
-                <div class="imgbox">
-                    <img src="img/img2.png" id="splash" alt="">
-                    <img src="img/mypic.png" alt="">
+        </section>
+
+        <section class="about" id="myabout">
+            <div class="about-content">
+                <h1>About <span class="multiText">Me</span></h1>
+                
+                <p>As a dedicated and ambitious Computer Science and Engineering
+                    student, I am constantly driven by my passion for technology and
+                    the desire to contribute to groundbreaking innovations. An ardent
+                    believer in lifelong learning, I stay up-to-date with the latest
+                    advancements in the industry by actively engaging in research,
+                    attending workshops, and participating in online courses. This
+                    commitment to ongoing education enables me to stay ahead of the
+                    curve and adapt to the rapidly evolving landscape of technology.
+                </p>
+                <div class="btns rdm"><button> Read More</button></div>
+            </div>
+            <div class="about-img">
+                <img src="profile-pic.png" alt="Profile Pic">
+            </div>
+        </section>
+
+        <section class="skill" id="myskill">
+            <h1 class="title">My <span class="multiText">Skill</span> </h1>
+            <div class="row">
+                <div class="course-col">
+                    <h3>DEVELOPMENT <span class="multiText"><i class="fa fa-code"></i></span></h3>
+                    <div class="skill-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Android development(Beginner)</span>
+                        <span>Wordpress (theme)</span>
+                        <span>WixStudio (theme)</span>
+                        <span>React</span>
+                        <span>Mongo DB</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                <div class="course-col">
+                    <h3>UI Designer <span class="multiText"><i class="fa fa-pen-ruler"></i></span></h3>
+                    <div class="skill-list">
+                        <span>Photoshop</span>
+                        <span>Canva</span>
+                        <span>InDesign</span>
+                    </div>
+                </div>
+                <div class="course-col">
+                    <h3>Programming Languages<span class="multiText"><i class="fa fa-code"></i></span></h3>
+                    <div class="skill-list">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about" id="myabout">
+        <section class="Blog" id="feed">
+            <div class="blog-content">
+                <h1>BLOG</h1>
+                <p>Welcome to my corner of the internet! As a passionate web
+                    developer, I've embarked on a journey filled with lines of code,
+                    design challenges, and endless possibilities. In this blog post,
+                    I want to share some of my experiences, insights, and the
+                    lessons I've learned along the way. <br>I invite you to join the
+                    conversation! Whether you're a fellow developer, a design
+                    enthusiast, or someone curious about the world of web
+                    development, let's connect. Share your thoughts, ask questions,
+                    or simply enjoy the exploration of this dynamic and
+                    ever-evolving field.</p>
 
-        <div class="about-content">
-            <h1>About <span class="multiText">Me</span></h1>
-            <h3>Frontend Developer</h3>
-            <p>As a dedicated and ambitious Computer Science and Engineering
-                student, I am constantly driven by my passion for technology and
-                the desire to contribute to groundbreaking innovations.
-                An ardent believer in lifelong learning, I stay up-to-date with
-                the latest advancements in the industry by actively engaging in
-                research, attending workshops, and participating in online
-                courses. This commitment to ongoing education enables me to stay
-                ahead of the curve and adapt to the rapidly evolving landscape
-                of technology.
-            </p>
-            <div class="btns rdm"><button> Read More</button></div>
-        </div>
-        <div class="about-img">
-            <img src="Anish1.png" alt="">
-        </div>
-
-
-    </section>
-
-    <section class="skill" id="myskill">
-        <h1 class="title">My <span class="multiText">Skill</span> </h1>
-        <div class="row">
-            <div class="course-col">
-                <h3>WEB DEVELOPMENT <span class="multiText"><i
-                            class="fa fa-code"></i></span></h3>
-                <div class="skill-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                    <span>Wordpress (theme)</span>
-                    <span>WixStudio (theme)</span>
+                <div class="comment-box">
+                    <h3>Leave a Feedback</h3>
+                    <form class="comment-form" onsubmit="sendEmail(); reset(); return false;" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Access Key for Web3Forms API -->
+                        <input type="hidden" name="access_key" value="48c102fe-39f5-484a-a575-f8c0bb761def">
+                        
+                        <!-- Name Input -->
+                        <input type="text" id="nameInput" name="name" placeholder="Enter Name" required>
+                        
+                        <!-- Email Input -->
+                        <input type="email" id="emailInput" name="email" placeholder="Enter Email" required>
+                        
+                        <!-- Comment Textarea -->
+                        <textarea id="commentInput" name="message" cols="30" rows="10" placeholder="Your comment" required></textarea>
+                        <div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="hero red-btn">POST COMMENT</button>
+                        </div>
+                    </form>
                 </div>
+                    
             </div>
-            <div class="course-col">
-                <h3>UI Designer <span class="multiText"><i
-                            class="fa fa-pen-ruler"></i></span></h3>
-                </h3>
-                <div class="skill-list">
-                    <span>Photoshop</span>
-                    <span>Canva</span>
-                    <span>InDesign</span>
+        </section>
 
-                </div>
-            </div>
-            <div class="course-col">
-                <h3>Programming Languages<span class="multiText"><i
-                            class="fa fa-code"></i></span></h3></i></h3>
-                <div class="skill-list">
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>JAVA</span>
-                    <span>Python</span>
-                </div>
-            </div>
+        <div class="scrolltotop">
+            <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
         </div>
-        </div>
-    </section>
 
-    <section class="Blog" id="feed">
-        <div class="blog-content">
-            <h1>BLOG</h1>
-            <p>Welcome to my corner of the internet! As a passionate web
-                developer, I've embarked on a journey filled with lines of code,
-                design challenges, and endless possibilities. In this blog post,
-                I want to share some of my experiences, insights, and the
-                lessons I've learned along the way.
-                <br>I invite you to join the conversation! Whether you're a
-                fellow developer, a design enthusiast, or someone curious about
-                the world of web development, let's connect. Share your
-                thoughts, ask questions, or simply enjoy the exploration of this
-                dynamic and ever-evolving field.
-            </p>
-
-
-            <div class="comment-box">
-                <h3>Leave a Feedback</h3>
-                <form class="comment-form" onsubmit="submitForm(event)">
-                    <input type="text" id="nameInput" placeholder="Enter Name">
-                    <input type="email" id="emailInput"
-                        placeholder="Enter Email">
-                    <textarea id="commentInput" cols="30" rows="10"
-                        placeholder="Your comment"></textarea>
-                    <button type="submit" class="hero red-btn">POST
-                        COMMENT</button>
-                </form>
-            </div>
-
-            <script>
-                function submitForm(event) {
-                    event.preventDefault(); // Prevents the default form submission
-
-                    // Get input values
-                    var name = document.getElementById('nameInput').value;
-                    var email = document.getElementById('emailInput').value;
-                    var comment = document.getElementById('commentInput').value;
-
-                    // Display the input values in the console
-                    console.log("Name:", name);
-                    console.log("Email:", email);
-                    console.log("Comment:", comment);
-
-                    // You can send this data to a server using AJAX or any other method
-                }
-            </script>
-
-    </section>
-    <div class="scrolltotop">
-        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
     </div>
-
-    <script>
-        // JavaScript function to scroll to the top of the page
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Show/hide the back-to-top button based on the scroll position
-        window.onscroll = function () {
-            var scrollBtn = document.getElementById('backToTopBtn');
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollBtn.style.display = 'block';
-            } else {
-                scrollBtn.style.display = 'none';
-            }
-        };
-    </script>
-
-
+    
+    <!-- Include the external JavaScript file -->
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script>
-        var typingEffect = new Typed(".multiText", {
-            strings: ["Coder...", "Developer...", "CyberSecurity Enthusiast..."],
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
